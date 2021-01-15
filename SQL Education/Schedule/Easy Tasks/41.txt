@@ -1,0 +1,6 @@
+Task:Во сколько начинается 4-ый учебный предмет по расписанию ?
+
+Answer:
+
+SELECT DISTINCT start_pair FROM Timepair AS t JOIN Schedule AS s ON s.number_pair = t.id
+WHERE s.number_pair = 4;

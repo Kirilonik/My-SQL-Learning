@@ -1,0 +1,6 @@
+Task:Удалить все перелеты, совершенные из Москвы (Moscow).
+
+Answer:
+
+DELETE FROM Trip
+WHERE town_from = 'Moscow';

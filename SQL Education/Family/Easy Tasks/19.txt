@@ -1,0 +1,7 @@
+Task: Определить, кто из членов семьи покупал картошку (potato)
+
+Answer:
+
+SELECT DISTINCT status FROM FamilyMembers AS F, Payments AS P,Goods AS G 
+WHERE (G.good_name = 'potato') AND
+(F.member_id = P.family_member AND P.good = G.good_id);

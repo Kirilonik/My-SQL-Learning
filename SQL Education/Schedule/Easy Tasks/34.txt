@@ -1,0 +1,6 @@
+Task: Сколько всего 10-ых классов?
+
+Answer:
+
+SELECT COUNT(name) as count FROM Class
+WHERE name LIKE '10%';

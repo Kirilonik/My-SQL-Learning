@@ -1,0 +1,23 @@
+УРОК: Удаление данных, оператор DELETE.
+
+Task 1: Измените запрос так, чтобы удалить товары (Goods), имеющие тип деликатесов (delicacies).
+Answer 1:
+
+DELETE Goods FROM Goods
+JOIN GoodTypes ON Goods.type = GoodTypes.good_type_id
+WHERE GoodTypes.good_type_name = "delicacies";
+
+
+
+Task 2: Удалить запись из таблицы Goods, у которой поле good_name равно "milk"
+Answer :
+
+DELETE FROM Goods
+WHERE good_name = 'milk';
+
+
+
+Task 3: Удалите все записи из таблицы Payments, используя оператор DELETE.
+Answer:
+
+DELETE FROM Payments;

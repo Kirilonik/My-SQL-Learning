@@ -1,0 +1,6 @@
+Task: Выведите информацию об обучающихся живущих на улице Пушкина (ul. Pushkina)?
+
+Answer:
+
+SELECT * FROM Student
+WHERE Student.address LIKE 'ul. Pushkina%' OR '%ul. Pushkina';

@@ -1,0 +1,6 @@
+Task: Сколько Анн (Anna) учится в школе ?
+
+Answer:
+
+SELECT * FROM Student
+WHERE Student.address LIKE 'ul. Pushkina%' OR '%ul. Pushkina';

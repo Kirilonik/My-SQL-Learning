@@ -1,0 +1,9 @@
+Task: Во сколько Стив Мартин (Steve Martin) прилетел в Лондон (London)?
+
+Answer:
+
+SELECT time_in FROM Trip t, Pass_in_trip pt, Passenger pr
+WHERE 
+town_to = 'London' 
+AND
+(t.id = pt.trip AND pt.passenger = pr.id AND pr.name = 'Steve Martin');

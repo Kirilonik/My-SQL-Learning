@@ -1,0 +1,8 @@
+Task: В какие города летал Bruce Willis?
+
+Answer:
+
+SELECT DISTINCT town_to FROM Trip, Pass_in_trip, Passenger
+WHERE Trip.id = Pass_in_trip.trip
+AND Pass_in_trip.passenger = Passenger.id
+AND Passenger.name = 'Bruce Willis';
