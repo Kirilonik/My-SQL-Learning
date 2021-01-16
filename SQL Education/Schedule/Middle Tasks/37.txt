@@ -1,0 +1,7 @@
+Task: Сколько лет самому молодому обучающемуся ?
+
+Answer:
+
+SELECT (2020 - (SELECT YEAR(Student.birthday) as y FROM Student
+ORDER by y DESC 
+LIMIT 1)) as year FROM DUAL;

@@ -1,0 +1,11 @@
+Task:Узнать, сколько потрачено на каждую из групп товаров в 2005 году.
+Вывести название группы и сумму.
+
+Answer:
+
+
+SELECT good_type_name, SUM(P.unit_price * P.amount) as costs
+FROM GoodTypes GT, Goods G, Payments P  
+WHERE YEAR(P.date) = 2005 
+AND GT.good_type_id = G.type AND P.good = G.good_id
+GROUP BY good_type_name;

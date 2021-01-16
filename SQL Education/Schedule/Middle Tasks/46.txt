@@ -1,0 +1,8 @@
+Task: В каких классах введет занятия преподаватель "Krauze" ?
+
+Answer:
+
+SELECT DISTINCT C.name FROM Class C, Schedule S, Teacher T 
+WHERE T.last_name = 'Krauze'
+AND 
+T.id = S.teacher AND S.class = C.id;

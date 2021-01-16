@@ -1,0 +1,7 @@
+Task: Удалить всех членов семьи с фамилией "Quincey".
+
+Answer:
+
+DELETE FROM FamilyMembers
+WHERE member_name LIKE '%Quincey'
+OR member_name LIKE 'Quincey%';

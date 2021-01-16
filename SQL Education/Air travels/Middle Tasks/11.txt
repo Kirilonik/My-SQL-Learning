@@ -1,0 +1,7 @@
+Task: Вывести пассажиров с самым длинным именем.
+
+Answer:
+
+SELECT name FROM Passenger
+ORDER BY LENGTH(name) DESC 
+LIMIT 1;  
