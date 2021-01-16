@@ -1,0 +1,8 @@
+Task: Определить кто и сколько потратил в июне 2005.
+
+Answer:
+
+SELECT member_name, SUM(P.amount * P.unit_price) as costs FROM
+FamilyMembers F JOIN Payments P ON P.family_member = F.member_id
+WHERE P.date BETWEEN '2005-06-01T00:00:00.000Z' AND '2005-06-30T00:00:00.000Z'
+GROUP BY member_name;

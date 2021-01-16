@@ -1,0 +1,11 @@
+Task:Вывести отсортированный по количеству перелетов (по убыванию)
+список пассажиров, совершивших хотя бы 1 полет.
+
+Answer:
+
+
+SELECT DISTINCT name, COUNT(T.id) as count FROM Passenger P, Pass_in_trip PT, Trip T
+WHERE P.id = PT.passenger AND PT.trip = T.id
+GROUP BY name
+ORDER BY COUNT(T.id) DESC; 
+

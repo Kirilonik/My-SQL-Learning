@@ -1,0 +1,8 @@
+Task: Определить товары, которые покупали более 1 раза.
+
+Answer:
+
+
+SELECT good_name FROM Goods G JOIN Payments P ON P.good = G.good_id
+GROUP BY G.good_name
+HAVING COUNT(P.good) > 1; 
