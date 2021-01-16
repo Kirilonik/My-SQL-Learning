@@ -1,0 +1,8 @@
+Task:Необходимо вывести рейтинг для комнат, которые хоть раз арендовали,
+как среднее значение рейтинга отзывов округленное до целого вниз.
+
+Answer:
+
+SELECT room_id, FLOOR(AVG(rating)) as rating FROM Reservations R, Reviews RV
+WHERE R.id = RV.reservation_id
+GROUP BY room_id;
