@@ -1,0 +1,6 @@
+Task:Узнать, кто старше всех в семьe.
+
+Answer:
+
+SELECT member_name FROM FamilyMembers 
+WHERE birthday = (SELECT MIN(birthday) FROM FamilyMembers);

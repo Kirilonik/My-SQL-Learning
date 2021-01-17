@@ -1,0 +1,6 @@
+Task:Добавьте товар с именем "Cheese" и типом "food" в список товаров (Goods).
+
+Answer:
+
+INSERT INTO Goods (good_id, good_name, type)
+VALUES (17 ,"Cheese", 0);

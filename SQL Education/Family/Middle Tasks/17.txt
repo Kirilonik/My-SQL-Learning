@@ -1,0 +1,8 @@
+Task: Определить, сколько потратил в 2005 году каждый из членов семьи.
+
+Answer:
+
+SELECT member_name, status, SUM(amount*unit_price) as costs FROM FamilyMembers, Payments
+WHERE member_id=family_member
+AND YEAR(date) = 2005
+GROUP BY member_name, status;
