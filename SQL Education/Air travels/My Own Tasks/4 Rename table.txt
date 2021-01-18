@@ -1,0 +1,5 @@
+Task: Переименуйте таблицу
+
+Answer:
+
+ALTER TABLE first_table RENAME second_table;

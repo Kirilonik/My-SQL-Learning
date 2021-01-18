@@ -1,0 +1,9 @@
+Task:Замените в таблице зарплату работника на 1000,
+если она равна 900, и на 1500 в остальных случаях.
+
+Answer:
+UPDATE table SET salary = 
+CASE
+WHEN salsry = 900 THEN 1000
+ELSE 1500
+END;

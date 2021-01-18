@@ -1,0 +1,6 @@
+Task: Добавьте в список типов товаров (GoodTypes) новый тип "auto".
+
+Answer:
+
+INSERT INTO GoodTypes (good_type_id, good_type_name)
+VALUES (12, "auto");

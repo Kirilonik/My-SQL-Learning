@@ -1,0 +1,9 @@
+Tasks: Вывести модели самолетов из одной компании.
+
+
+Answer:
+
+SELECT DISTINCT A.plane, B.plane, A.company FROM Trip A, Trip B
+WHERE A.plane <> B.plane
+AND A.company = B.company
+ORDER BY A.company

@@ -1,0 +1,7 @@
+Task: Найдите дубли в таблице.
+
+Answer:
+SELECT email, COUNT(email)
+FROM customers
+GROUP BY email
+HAVING COUNT(email) > 1;
